@@ -5,11 +5,11 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class DogTest {
 
-    Dog testingDog = new Dog("Scooby","Shitzu",4);
+    Dog testingDog = new Dog("Scooby","Shitzu",100);
 
     @Test
     public void woofingTest(){
-        assertEquals("wooffies",testingDog.woof(), "This is not a dog");
+        assertEquals("woof",testingDog.woof(), "This is not a dog");
     }
 
     @Test

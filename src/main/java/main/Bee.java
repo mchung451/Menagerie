@@ -1,6 +1,6 @@
 package main;
 
-public class Bee extends Insects{
+public class Bee extends Insects implements Flying{
 
     ///// Attributes ///////
     private String name;
