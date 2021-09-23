@@ -12,5 +12,9 @@ public class DogTest {
         assertEquals("wooffies",testingDog.woof(), "This is not a dog");
     }
 
+    @Test
+    public void legTest(){
+        assertEquals(4,testingDog.getLegs(),"This is not a dog");
+    }
 
 }
