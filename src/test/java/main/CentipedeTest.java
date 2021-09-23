@@ -9,6 +9,6 @@ public class CentipedeTest {
 
     @Test
     public void centipedeTest(){
-        assertEquals(100,testCentipede.centipedelegs());;
+        assertEquals(100,testCentipede.getLegs());;
     }
 }
