@@ -37,7 +37,7 @@ class HumanTest {
 
     @Test
     @DisplayName("Human is a vegan Test")
-    public void veganTest() {
+    void veganTest() {
         assertEquals("I only eat Lettuce",testHuman.eatLettuce(),"Cannot be a vegan it eats something other than lettuce");
     }
 

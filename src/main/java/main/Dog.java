@@ -1,7 +1,5 @@
 package main;
 
-import java.time.LocalDate;
-
 public class Dog extends Mammals{
 
 
