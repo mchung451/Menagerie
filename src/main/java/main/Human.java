@@ -1,23 +1,25 @@
 package main;
 
-public class Bee extends Insects implements Flying{
+public class Human {
 
-    ///// Attributes ///////
+
+    ////////// Attributes ///////////
     private String name;
     private String breed;
     private int legs;
 
-    ///// Constructor //////
-    public Bee (String name, String breed, int legs){
+    ////////// Constructor //////////
+
+    public Human (String name, String breed, int legs){
         this.name = name;
         this.breed = breed;
         this.legs = legs;
     }
 
-    ////// Methods ///////
+    ////////// Methods ///////////
 
-    public String buzz(){
-        return "Buzz";
+    public String humanNoise(){
+        return "ahhh!";
     }
 
     public String getName() {
@@ -42,20 +44,5 @@ public class Bee extends Insects implements Flying{
 
     public void setLegs(int legs) {
         this.legs = legs;
-    }
-
-    @Override
-    public void takeOff() {
-
-    }
-
-    @Override
-    public void fly() {
-
-    }
-
-    @Override
-    public void land() {
-
     }
 }

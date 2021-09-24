@@ -1,6 +1,6 @@
 package main;
 
-public class Bat extends Mammals{
+public class Bat extends Mammals implements Flying{
 
     //////////// Attributes ////////////
 
@@ -39,5 +39,20 @@ public class Bat extends Mammals{
 
     public void setLegs(int legs) {
         this.legs = legs;
+    }
+
+    @Override
+    public void takeOff() {
+
+    }
+
+    @Override
+    public void fly() {
+
+    }
+
+    @Override
+    public void land() {
+
     }
 }
