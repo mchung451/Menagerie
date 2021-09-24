@@ -16,7 +16,7 @@ public class BeeTest {
     @Test
     @DisplayName("Bee Leg Test")
     public void testingBeeLegs() {
-        assertEquals(6, 6, "This is not a bee");
+        assertEquals(6, testBee.getLegs(), "This is not a bee");
     }
 
     @Test

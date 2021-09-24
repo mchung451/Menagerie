@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class DogTest {
 
-    Dog testingDog = new Dog("Scooby","Shitzu",100);
+    Dog testingDog = new Dog("Scooby","Shitzu",4);
 
     @Test
     @DisplayName("Dog Noise Test")
