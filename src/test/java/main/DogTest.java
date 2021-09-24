@@ -23,12 +23,13 @@ public class DogTest {
     @Test
     @DisplayName("Dog is a Mammal Test")
     public void mammalTest() {
-        assertEquals("I breathe air",testingDog.breathe(),"This cannot be a dog as it does not breathe air");
-        assertEquals("I have a live birth",testingDog.reproduce(),"This cannot be a dog as it does not have a live birth");
+        assertEquals("I breathe air",testingDog.breathe(),"This cannot be a mammal as it does not breathe air");
+        assertEquals("I have a live birth",testingDog.reproduce(),"This cannot be a mammal as it does not have a live birth");
+        assertEquals("I am an vertebrate",testingDog.skeleton(),"This cannot be a mammal as it not a vertebrate");
     }
 
     @Test
-    @DisplayName("Dog is an animal Test")
+    @DisplayName("Dog is an Animal Test")
     public void animalTest(){
         assertEquals("I die",testingDog.death(),"This cannot be an animal as it does not die");
     }

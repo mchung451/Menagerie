@@ -9,5 +9,10 @@ public abstract class Mammals extends Animals{
     public String reproduce(){
         return "I have a live birth";
     }
+
+    public String skeleton(){
+        return "I am an vertebrate";
+    }
+
 }
 

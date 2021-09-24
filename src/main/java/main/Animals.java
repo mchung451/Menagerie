@@ -8,7 +8,11 @@ public abstract class Animals {
 
     ////////// Methods ///////////////
     public String death(){
-        return"I die";
+        return "I die";
+    }
+
+    public String eat(){
+        return "I eat something";
     }
 
 }

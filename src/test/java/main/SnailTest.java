@@ -19,4 +19,16 @@ public class SnailTest {
     public void snailLegTest(){
         assertEquals(0,testSnail.getLegs(),"This cannot be a Snail");
     }
+
+    @Test
+    @DisplayName("Snail is a insect test")
+    public void testingInsect() { assertEquals("I am a invertebrate",testSnail.skeleton(),"This cannot be an insect as it is not an invertebrate");}
+
+    @Test
+    @DisplayName("Snail is an animal Test")
+    public void animalTest(){
+        assertEquals("I die",testSnail.death(),"This cannot be an animal as it does not die");
+    }
+
+
 }

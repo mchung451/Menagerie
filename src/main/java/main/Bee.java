@@ -45,17 +45,20 @@ public class Bee extends Insects implements Flying{
     }
 
     @Override
-    public void takeOff() {
+    public String takeOff() {
+        return "I take off";
 
     }
 
     @Override
-    public void fly() {
+    public String fly() {
+        return "I fly";
 
     }
 
     @Override
-    public void land() {
+    public String land() {
+        return "I land";
 
     }
 }

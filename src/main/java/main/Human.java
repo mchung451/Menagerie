@@ -1,6 +1,6 @@
 package main;
 
-public class Human extends Mammals{
+public class Human extends Mammals {
 
 
     ////////// Attributes ///////////
@@ -45,4 +45,5 @@ public class Human extends Mammals{
     public void setLegs(int legs) {
         this.legs = legs;
     }
+
 }

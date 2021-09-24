@@ -21,5 +21,19 @@ public class HumanTest {
         assertEquals(2,testHuman.getLegs(),"This cannot be a human");
     }
 
+    @Test
+    @DisplayName("Human is a Mammal Test")
+    public void mammalTest() {
+        assertEquals("I breathe air",testHuman.breathe(),"This cannot be a mammal as it does not breathe air");
+        assertEquals("I have a live birth",testHuman.reproduce(),"This cannot be a mammal as it does not have a live birth");
+        assertEquals("I am an vertebrate",testHuman.skeleton(),"This cannot be a mammal as it not a vertebrate");
+    }
+
+    @Test
+    @DisplayName("Human is an animal Test")
+    public void animalTest(){
+        assertEquals("I die",testHuman.death(),"This cannot be an animal as it does not die");
+    }
+
 
 }
