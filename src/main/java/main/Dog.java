@@ -44,5 +44,5 @@ public class Dog extends Mammals{
     public int getLegs() {
         return legs;
     }
-    
+
 }

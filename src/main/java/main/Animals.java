@@ -1,6 +1,6 @@
 package main;
 
-public abstract class Animals {
+public class Animals {
 
     /////////// Attributes ////////////
 
