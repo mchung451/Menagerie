@@ -9,32 +9,32 @@ public class BeeTest {
 
     @Test
     @DisplayName("Bee Sound Test")
-    public void testingBeeSound() {
+    void testingBeeSound() {
         assertEquals("Buzz", testBee.buzz(), "This is not a bee");
     }
 
     @Test
     @DisplayName("Bee Leg Test")
-    public void testingBeeLegs() {
+    void testingBeeLegs() {
         assertEquals(6, testBee.getLegs(), "This is not a bee");
     }
 
     @Test
     @DisplayName("Bee is a insect test")
-    public void testingInsect() {
+    void testingInsect() {
         assertEquals("I am a invertebrate", testBee.skeleton(), "This cannot be an insect as it is not an invertebrate");
     }
 
 
     @Test
     @DisplayName("Bee is an animal Test")
-    public void animalTest() {
+    void animalTest() {
         assertEquals("I die", testBee.death(), "This cannot be an animal as it does not die");
     }
 
     @Test
     @DisplayName("Bee can fly test")
-    public void flyTest() {
+    void flyTest() {
         assertEquals("I take off", testBee.takeOff(), "This thing cannot take off");
         assertEquals("I fly", testBee.fly(), "This thing cannot fly");
         assertEquals("I land", testBee.land(), "This thing cannot land");
