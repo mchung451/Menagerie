@@ -1,25 +1,20 @@
 package main;
 
-public class Human extends Mammals{
+public class Snail extends Insects{
 
-
-    ////////// Attributes ///////////
     private String name;
     private String breed;
     private int legs;
 
-    ////////// Constructor //////////
 
-    public Human (String name, String breed, int legs){
+    public Snail( String name, String breed, int legs){
         this.name = name;
         this.breed = breed;
         this.legs = legs;
     }
 
-    ////////// Methods ///////////
-
-    public String humanNoise(){
-        return "ahhh!";
+    public String snailSound(){
+        return "Slither";
     }
 
     public String getName() {

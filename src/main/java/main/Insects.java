@@ -1,4 +1,4 @@
 package main;
 
-public class Insects extends Animals{
+public abstract class Insects extends Animals{
 }
