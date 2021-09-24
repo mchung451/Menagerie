@@ -21,7 +21,9 @@ public class BeeTest {
 
     @Test
     @DisplayName("Bee is a insect test")
-    public void testingInsect() { assertEquals("I am a invertebrate",testBee.skeleton(),"This cannot be an insect as it is not an invertebrate");}
+    public void testingInsect() {
+        assertEquals("I am a invertebrate", testBee.skeleton(), "This cannot be an insect as it is not an invertebrate");
+    }
 
 
     @Test
@@ -32,8 +34,9 @@ public class BeeTest {
 
     @Test
     @DisplayName("Bee can fly test")
-    public void flyTest(){
-        assertEquals("I take off",testBee.takeOff(),"This thing cannot take off");
-        assertEquals("I fly",testBee.fly(),"This thing cannot fly");
-        assertEquals("I land",testBee.land(),"This thing cannot land");
+    public void flyTest() {
+        assertEquals("I take off", testBee.takeOff(), "This thing cannot take off");
+        assertEquals("I fly", testBee.fly(), "This thing cannot fly");
+        assertEquals("I land", testBee.land(), "This thing cannot land");
+    }
 }

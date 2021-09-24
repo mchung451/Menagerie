@@ -30,5 +30,11 @@ public class SnailTest {
         assertEquals("I die",testSnail.death(),"This cannot be an animal as it does not die");
     }
 
+    @Test
+    @DisplayName("Snail is a vegan Test")
+    public void veganTest() {
+        assertEquals("I only eat Lettuce",testSnail.eatLettuce(),"Cannot be a vegan it eats something other than lettuce");
+    }
+
 
 }

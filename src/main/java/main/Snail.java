@@ -1,6 +1,6 @@
 package main;
 
-public class Snail extends Insects{
+public class Snail extends Insects implements Vegan{
 
     private String name;
     private String breed;
@@ -39,5 +39,10 @@ public class Snail extends Insects{
 
     public void setLegs(int legs) {
         this.legs = legs;
+    }
+
+    @Override
+    public String eatLettuce() {
+        return "I only eat Lettuce";
     }
 }
