@@ -1,6 +1,6 @@
 package main;
 
-import jdk.jfr.Description;
+
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -33,6 +33,12 @@ public class HumanTest {
     @DisplayName("Human is an animal Test")
     public void animalTest(){
         assertEquals("I die",testHuman.death(),"This cannot be an animal as it does not die");
+    }
+
+    @Test
+    @DisplayName("Human is a vegan Test")
+    public void veganTest() {
+        assertEquals("I only eat lettuce",testHuman.eatLettuce(),"Cannot be a vegan it eats something other than lettuce");
     }
 
 

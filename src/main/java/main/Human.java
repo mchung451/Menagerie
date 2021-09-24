@@ -1,6 +1,6 @@
 package main;
 
-public class Human extends Mammals {
+public class Human extends Mammals implements Vegan{
 
 
     ////////// Attributes ///////////
@@ -46,4 +46,8 @@ public class Human extends Mammals {
         this.legs = legs;
     }
 
+    @Override
+    public String eatLettuce() {
+        return "I only eat Lettuce";
+    }
 }

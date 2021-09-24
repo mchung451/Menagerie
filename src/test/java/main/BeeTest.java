@@ -29,4 +29,11 @@ public class BeeTest {
     public void animalTest() {
         assertEquals("I die", testBee.death(), "This cannot be an animal as it does not die");
     }
+
+    @Test
+    @DisplayName("Bee can fly test")
+    public void flyTest(){
+        assertEquals("I take off",testBee.takeOff(),"This thing cannot take off");
+        assertEquals("I fly",testBee.fly(),"This thing cannot fly");
+        assertEquals("I land",testBee.land(),"This thing cannot land");
 }

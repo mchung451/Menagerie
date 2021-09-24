@@ -31,6 +31,8 @@ public class BatTest {
     @Test
     @DisplayName("Bat can fly test")
     public void flyTest(){
-        assertEquals("I take off",testBat.takeOff(),"This thing cannot fly");
+        assertEquals("I take off",testBat.takeOff(),"This thing cannot take off");
+        assertEquals("I fly",testBat.fly(),"This thing cannot fly");
+        assertEquals("I land",testBat.land(),"This thing cannot land");
     }
 }
