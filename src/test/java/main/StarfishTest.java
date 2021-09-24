@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class StarfishTest {
+class StarfishTest {
 
 
 
@@ -14,7 +14,7 @@ public class StarfishTest {
     @Test
     @DisplayName("Testing the number of arms of a starfish")
 
-    public void armTest(){
+    void armTest(){
         assertEquals(5,testStarfish.getArms(),"This cannot be a starfish");
     }
 
