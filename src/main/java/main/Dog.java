@@ -44,8 +44,5 @@ public class Dog extends Mammals{
     public int getLegs() {
         return legs;
     }
-
-    public void setLegs(String eyeColour) {
-        this.legs = legs;
-    }
+    
 }
