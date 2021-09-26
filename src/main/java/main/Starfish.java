@@ -5,6 +5,7 @@ public class Starfish extends Fish {
     private String breed;
     private int arms;
 
+    /////// This is the constructor /////////
     public Starfish (String name, String breed, int arms){
         this.name = name;
         this.breed = breed;
