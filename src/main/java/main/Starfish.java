@@ -1,31 +1,31 @@
 package main;
 
 public class Starfish extends Fish {
-    private String name;
-    private String breed;
+    private String starfishName;
+    private String starfishBreed;
     private int arms;
 
     /////// This is the constructor /////////
-    public Starfish (String name, String breed, int arms){
-        this.name = name;
-        this.breed = breed;
+    public Starfish (String starfishName, String starfishBreed, int arms){
+        this.starfishName = starfishName;
+        this.starfishBreed = starfishBreed;
         this.arms = arms;
     }
 
     public String getName() {
-        return name;
+        return starfishName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setName(String starfishName) {
+        this.starfishName = starfishName;
     }
 
     public String getBreed() {
-        return breed;
+        return starfishBreed;
     }
 
     public void setBreed(String breed) {
-        this.breed = breed;
+        this.starfishBreed = breed;
     }
 
     public int getArms() {
