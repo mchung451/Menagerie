@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class StarfishTest {
+public class StarfishTest {
 
     Starfish testStarfish = new Starfish("Patrick","Pink",5);
 

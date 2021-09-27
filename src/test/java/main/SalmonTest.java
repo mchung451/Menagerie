@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class SalmonTest {
+public class SalmonTest {
 
     Salmon testSalmon = new Salmon("Alex", "Pink", 0);
 

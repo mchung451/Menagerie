@@ -4,7 +4,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class DogTest {
+public class DogTest {
 
     Dog testingDog = new Dog("Scooby","Shitzu",4);
 
