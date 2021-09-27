@@ -1,5 +1,6 @@
 package main;
 
+// Please Work //
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -7,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class HumanTest {
 
-    Human testHuman = new Human("Fred","European",2);
+    Human testHuman = new Human("Bob","European",2);
 
     @Test
     @DisplayName("Human Noise Test")
