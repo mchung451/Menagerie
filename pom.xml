@@ -58,6 +58,12 @@
             <version>0.8.7</version>
             <type>maven-plugin</type>
         </dependency>
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-java</artifactId>
+            <version>6.10.4</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
 </project>
