@@ -11,7 +11,7 @@ public class BatTest {
     @Test
     @DisplayName("Bat Leg Test")
     void batTesting(){
-        assertEquals(2, testBat.getLegs(), "This is not a bat");;
+        assertEquals(2, testBat.getLegs(), "This is not a bat");
     }
 
     @Test
@@ -34,5 +34,17 @@ public class BatTest {
         assertEquals("I take off",testBat.takeOff(),"This thing cannot take off");
         assertEquals("I fly",testBat.fly(),"This thing cannot fly");
         assertEquals("I land",testBat.land(),"This thing cannot land");
+    }
+
+    @Test
+    @DisplayName("Name Test")
+    void nameTest(){
+        assertEquals("Barry",testBat.getName(),"The names are not the same");
+    }
+
+    @Test
+    @DisplayName("Breed Test")
+    void breedTest(){
+        assertEquals("Fruit",testBat.getBreed(),"The breeds are not the same");
     }
 }
