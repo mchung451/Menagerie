@@ -6,6 +6,7 @@ public class Main {
         // This comment was added to remove a code smell!
         // Testing once again for jacoco take 2
         // test test test
+        // yet another test
 
     }
 }
