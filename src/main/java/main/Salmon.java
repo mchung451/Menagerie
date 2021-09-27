@@ -1,6 +1,6 @@
 package main;
 
-public class Salmon {
+public class Salmon extends Fish{
 
     ////// Attributes //////////
 
