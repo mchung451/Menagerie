@@ -36,8 +36,13 @@ public class cucumberCentipedeTest{
         actualLegs = isItACentipede.isItACentipede(legs);
     }
 
-    @Then("I should be told {String}")
-    public void reveal(String actualLegs){
+    @Then("I should be told Yes")
+    public void revealYes(String actualLegs){
+        assertEquals("100",actualLegs);
+    }
+
+    @Then("I should be told No")
+    public void revealNo(String actualLegs){
         assertEquals("100",actualLegs);
     }
 }

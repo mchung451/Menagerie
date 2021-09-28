@@ -19,7 +19,7 @@
         <sonar.jacoco.reportPath>${project.basedir}/../target/jacoco.exec</sonar.jacoco.reportPath>
         <sonar.language>java</sonar.language>
     </properties>
-    
+
     <build>
         <plugins>
             <plugin>
@@ -63,6 +63,11 @@
             <artifactId>cucumber-java</artifactId>
             <version>6.10.4</version>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-junit</artifactId>
+            <version>6.10.4</version>
         </dependency>
     </dependencies>
 

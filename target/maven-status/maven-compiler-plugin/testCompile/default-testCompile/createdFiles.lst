@@ -1,5 +1,8 @@
 main\BeeTest.class
+main\cucumberCentipedeTest.class
+main\isItACentipede.class
 main\BatTest.class
+main\SalmonTest.class
 main\HumanTest.class
 main\SnailTest.class
 main\CentipedeTest.class

@@ -5,15 +5,14 @@ Feature: Is it a centipede?
   Scenario: Centipede is a Centipede
     Given It has 100 legs
     When I ask how many legs it has
-    Then I Should be told "Yes"
-
+    Then I should be told Yes
 
   Scenario: Dog is a Centipede
     Given It has 4 legs
     When I ask how many legs it has
-    Then I should be told "No"
+    Then I should be told No
 
   Scenario: Salmon is a Centipede
     Given It has 100 legs
-    When I was how many legs it has
-    Then I should be told "No"
+    When I ask how many legs it has
+    Then I should be told No
