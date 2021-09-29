@@ -43,6 +43,6 @@ public class cucumberCentipedeTest{
 
     @Then("I should be told No")
     public void revealNo(String actualLegs){
-        assertEquals("100",actualLegs);
+        assertEquals("100",legs);
     }
 }

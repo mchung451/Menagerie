@@ -1,10 +1,14 @@
 main\BeeTest.class
+main\runnerTest.class
+main\cucumberFishTest.class
+main\CentipedeTest.class
+main\cucumberFishTest$isItAFish.class
+main\runner.class
+main\DogTest.class
 main\cucumberCentipedeTest.class
 main\BatTest.class
 main\SalmonTest.class
 main\HumanTest.class
 main\SnailTest.class
-main\CentipedeTest.class
 main\StarfishTest.class
 main\isItACentipedeTest.class
-main\DogTest.class
