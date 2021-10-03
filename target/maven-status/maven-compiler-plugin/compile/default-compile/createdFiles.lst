@@ -1,4 +1,5 @@
 main\Flying.class
+main\Roost.class
 main\Bee.class
 main\Animals.class
 main\Starfish.class
@@ -12,4 +13,5 @@ main\Bat.class
 main\Salmon.class
 main\Fish.class
 main\Vegan.class
+main\Kennel.class
 main\Mammals.class

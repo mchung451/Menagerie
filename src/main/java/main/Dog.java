@@ -43,4 +43,12 @@ public class Dog extends Mammals{
         return legs;
     }
 
+    @Override
+    public String toString() {
+        return "Dog{" +
+                "name='" + name + '\'' +
+                ", breed='" + breed + '\'' +
+                ", legs=" + legs +
+                '}';
+    }
 }

@@ -56,4 +56,13 @@ public class Bat extends Mammals implements Flying{
         return "I land";
 
     }
+
+    @Override
+    public String toString() {
+        return "Bat{" +
+                "name='" + name + '\'' +
+                ", breed='" + breed + '\'' +
+                ", legs=" + legs +
+                '}';
+    }
 }
