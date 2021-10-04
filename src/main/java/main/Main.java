@@ -3,10 +3,7 @@ package main;
 import com.google.gson.Gson;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -49,11 +46,11 @@ class Kennel {
 
     /// Methods ///
 
-    public List<Dog> getKennel(){
+    public List<Dog> getKennel() {
         return this.kennel;
     }
 
-    public String toString(){
+    public String toString() {
         String json = new Gson().toJson(kennel);
         return json;
     }
@@ -77,4 +74,20 @@ public class Main {
         Kennel myKennel = new Kennel();
         return myKennel.toString();
     }
+
+    @GetMapping("/WelcomeMessage")
+    public String welcome(){
+        return "Please do not use flash when photographing the animals";
+    }
+
+    // Created an instance of Kennel since non-static method //
+    Kennel newKennel = new Kennel();
+    @PostMapping("/addDog")
+    public String addANewDog(String dogName, String dogBreed, int dogLegs){
+        List<Dog> newKennel1 = newKennel.getKennel();
+        Dog newDog = new Dog(dogName, dogBreed, dogLegs);
+        newKennel1.add(newDog);
+        return newDog.toString();
+    }
+
 }

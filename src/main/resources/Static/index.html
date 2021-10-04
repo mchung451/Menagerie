@@ -5,20 +5,31 @@
     <title>My zoo</title>
 </head>
 <body>
-<h1><a href="Kennel">Enter name of Animal</a></h1>
-<form action = "/Kennel" method="GET" id="breed">
+<h1><a href="WelcomeMessage">Welcome to the zoo!</a></h1>
+<form action = "/Kennel" method="GET">
     <div>
-        <label for="Poodle">what is the name of the dog?</label>
-        <input name="breed" id="Poodle">
-        <button>Search</button>
+        <label>Explore the dogs at the zoo</label>
+        <button>Search Dogs</button>
     </div>
 
 </form>
-<form action = "/Roost" method="GET" id="1">
+<form action = "/Roost" method="GET">
     <div>
-        <label for="Poodle">what is the name of the Bat?</label>
-        <input name="name" id="11">
-        <button>Search</button>
+        <label>Explore the bats at the zoo</label>
+        <button>Search Bat</button>
+    </div>
+</form>
+
+<h2> Adding a dog to the zoo </h2>
+<form action = "/addDog" method ="POST">
+    <div id="addingANewDog">
+        <label for="addingDogName"> Name:</label>
+        <input name = "dogName" id="addingDogName">
+        <label for="addingDogBreed"> Breed: </label>
+        <input name ="dogBreed" id="addingDogBreed">
+        <label for="addingDogLegs">Legs:</label>
+        <input name="dogLegs" id ="addingDogLegs">
+        <button>Add new Dog</button>
     </div>
 </form>
 </body>
