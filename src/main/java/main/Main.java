@@ -22,6 +22,11 @@ class Roost {
 
     /// Methods ///
 
+    public String addANewBat(String batName, String batBreed, int batLegs) {
+        Bat newBat = new Bat(batName, batBreed, batLegs);
+        return String.valueOf(roost.add(newBat));
+    }
+
     public List<Bat> getRoost() {
         return this.roost;
     }
@@ -30,6 +35,7 @@ class Roost {
         String json = new Gson().toJson(roost);
         return json;
     }
+
 }
 
 class Kennel {
@@ -45,6 +51,11 @@ class Kennel {
     }
 
     /// Methods ///
+
+    public String addANewDog(String dogName, String dogBreed, int dogLegs) {
+        Dog newDog = new Dog(dogName, dogBreed, dogLegs);
+        return String.valueOf(kennel.add(newDog));
+    }
 
     public List<Dog> getKennel() {
         return this.kennel;
@@ -63,16 +74,18 @@ public class Main {
     public static void main(String[] args){
         SpringApplication.run(Main.class, args);
     }
+
+    Roost newRoost = new Roost();
+    Kennel newKennel = new Kennel();
+
     @GetMapping("/Roost")
     public String myRoost() {
-        Roost myRoost = new Roost();
-        return myRoost.toString();
+        return newRoost.toString();
     }
 
     @GetMapping("/Kennel")
-    public String myMap() {
-        Kennel myKennel = new Kennel();
-        return myKennel.toString();
+    public String myKennel() {
+        return newKennel.toString();
     }
 
     @GetMapping("/WelcomeMessage")
@@ -80,14 +93,16 @@ public class Main {
         return "Please do not use flash when photographing the animals";
     }
 
-    // Created an instance of Kennel since non-static method //
-    Kennel newKennel = new Kennel();
+
     @PostMapping("/addDog")
-    public String addANewDog(String dogName, String dogBreed, int dogLegs){
-        List<Dog> newKennel1 = newKennel.getKennel();
-        Dog newDog = new Dog(dogName, dogBreed, dogLegs);
-        newKennel1.add(newDog);
-        return newKennel1.toString();
+    public String addANewDog(@RequestParam String dogName, String dogBreed, int dogLegs){
+        newKennel.addANewDog(dogName,dogBreed,dogLegs);
+        return "Dog successfully added!";
     }
 
+    @PostMapping("/addRoost" )
+    public String addingNewBat(@RequestParam String batName,String batBreed, int batLegs){
+        newRoost.addANewBat(batName,batBreed, batLegs);
+        return "Bat successfully added!";
+    }
 }
