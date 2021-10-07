@@ -87,7 +87,7 @@ public class Main {
         List<Dog> newKennel1 = newKennel.getKennel();
         Dog newDog = new Dog(dogName, dogBreed, dogLegs);
         newKennel1.add(newDog);
-        return newDog.toString();
+        return newKennel1.toString();
     }
 
 }

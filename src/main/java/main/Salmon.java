@@ -41,4 +41,13 @@ public class Salmon extends Fish{
     public void setSalmonArms(int salmonArms) {
         this.salmonArms = salmonArms;
     }
+
+    @Override
+    public String toString() {
+        return "Salmon{" +
+                "salmonName='" + salmonName + '\'' +
+                ", salmonBreed='" + salmonBreed + '\'' +
+                ", salmonArms=" + salmonArms +
+                '}';
+    }
 }

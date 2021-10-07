@@ -1,6 +1,7 @@
 main\Flying.class
 main\Roost.class
 main\Bee.class
+main\Aquarium.class
 main\Animals.class
 main\Starfish.class
 main\Main.class
@@ -11,6 +12,7 @@ main\Centipede.class
 main\Dog.class
 main\Bat.class
 main\Salmon.class
+main\AquariumController.class
 main\Fish.class
 main\Vegan.class
 main\Kennel.class
