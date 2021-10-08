@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: main.SnailTest
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 s - in main.SnailTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.759 s - in main.SnailTest
