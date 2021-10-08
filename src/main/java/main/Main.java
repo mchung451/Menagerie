@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.*;
 import java.util.ArrayList;
 import java.util.List;
 
-
 class Roost {
 
     /// Attributes ///
@@ -105,4 +104,5 @@ public class Main {
         newRoost.addANewBat(batName,batBreed, batLegs);
         return "Bat successfully added!";
     }
+
 }

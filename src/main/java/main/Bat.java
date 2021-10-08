@@ -9,6 +9,7 @@ public class Bat extends Mammals implements Flying{
     private int legs;
 
     /////////// Constructors ///////////
+
     public Bat(String name, String breed, int legs){
         this.name = name;
         this.breed = breed;
