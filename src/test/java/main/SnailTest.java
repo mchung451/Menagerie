@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class SnailTest {
 
-    Snail testSnail = new Snail("Gary","Giant African",2019,0.24);
+    Snail testSnail = new Snail("Gary","Giant African",0.24);
 
     @Test
     @DisplayName("Snail Sound Test")
@@ -20,11 +20,9 @@ public class SnailTest {
     void getAndSet(){
         testSnail.setName("AJ");
         testSnail.setBreed("Milk");
-        testSnail.setBirthYear(2020);
         testSnail.setShellDiameter(1);
         assertEquals("AJ",testSnail.getName(),"Names don't match");
         assertEquals("Milk",testSnail.getBreed(),"Breeds don't match");
-        assertEquals(2020,testSnail.getBirthYear(),"Birth Year don't match");
         assertEquals(1,testSnail.getShellDiameter(),"Shell diameter don't match");
 
     }
