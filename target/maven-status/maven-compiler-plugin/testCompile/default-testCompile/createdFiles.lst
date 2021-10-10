@@ -6,6 +6,7 @@ main\CentipedeTest.class
 main\cucumberFishTest$isItAFish.class
 main\runner.class
 main\DogTest.class
+main\ElephantTest.class
 main\cucumberCentipedeTest.class
 main\BatTest.class
 main\SalmonTest.class

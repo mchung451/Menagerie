@@ -32,5 +32,6 @@ public class DogTest {
     @DisplayName("Dog is an Animal Test")
     void animalTest(){
         assertEquals("I die",testingDog.death(),"This cannot be an animal as it does not die");
+        assertEquals("I eat something",testingDog.eat(),"This cannot be an animal as it does not eat");
     }
 }

@@ -29,9 +29,4 @@ public class Centipede extends Insects{
     public void setLegs(int legs) {
         this.legs = legs;
     }
-
-    public float centipedelegs(){
-        return legs;
-
-    }
 }

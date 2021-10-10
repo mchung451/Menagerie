@@ -6,17 +6,21 @@ public class Salmon extends Fish{
 
     private String salmonName;
     private String salmonBreed;
-    private int salmonArms;
+    private double weight;
 
     /////// Constructors //////////
 
-    public Salmon(String salmonName, String salmonBreed, int salmonArms) {
+    public Salmon(String salmonName, String salmonBreed, double weight) {
         this.salmonName = salmonName;
         this.salmonBreed = salmonBreed;
-        this.salmonArms = salmonArms;
+        this.weight = weight;
     }
 
     //////// Methods ////////////
+
+    public String fleshColour(){
+        return "I have orange flesh";
+    }
 
     public String getSalmonName() {
         return salmonName;
@@ -34,12 +38,12 @@ public class Salmon extends Fish{
         this.salmonBreed = salmonBreed;
     }
 
-    public int getSalmonArms() {
-        return salmonArms;
+    public double getWeight() {
+        return weight;
     }
 
-    public void setSalmonArms(int salmonArms) {
-        this.salmonArms = salmonArms;
+    public void setWeight(double weight) {
+        this.weight = weight;
     }
 
     @Override
@@ -47,7 +51,7 @@ public class Salmon extends Fish{
         return "Salmon{" +
                 "salmonName='" + salmonName + '\'' +
                 ", salmonBreed='" + salmonBreed + '\'' +
-                ", salmonArms=" + salmonArms +
+                ", weight=" + weight +
                 '}';
     }
 }

@@ -16,7 +16,18 @@ public class BeeTest {
     @Test
     @DisplayName("Bee Leg Test")
     void testingBeeLegs() {
-        assertEquals(6, testBee.getLegs(), "This is not a bee");
+        assertEquals(6, testBee.getSiblings(), "This is not a bee");
+    }
+
+    @Test
+    @DisplayName("Setters and Getters Test")
+    void setAndGet(){
+        testBee.setName("Matilda");
+        testBee.setBreed("Worker");
+        testBee.setSiblings(100);
+        assertEquals("Matilda",testBee.getName(),"Names don't match");
+        assertEquals("Worker",testBee.getBreed(),"Breeds don't match");
+        assertEquals(100,testBee.getSiblings(),"Siblings don't match");
     }
 
     @Test

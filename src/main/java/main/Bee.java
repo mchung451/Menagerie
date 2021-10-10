@@ -5,13 +5,13 @@ public class Bee extends Insects implements Flying{
     ///// Attributes ///////
     private String name;
     private String breed;
-    private int legs;
+    private int siblings;
 
     ///// Constructor //////
-    public Bee (String name, String breed, int legs){
+    public Bee (String name, String breed, int siblings){
         this.name = name;
         this.breed = breed;
-        this.legs = legs;
+        this.siblings = siblings;
     }
 
     ////// Methods ///////
@@ -36,12 +36,12 @@ public class Bee extends Insects implements Flying{
         this.breed = breed;
     }
 
-    public int getLegs() {
-        return legs;
+    public int getSiblings() {
+        return siblings;
     }
 
-    public void setLegs(int legs) {
-        this.legs = legs;
+    public void setSiblings(int siblings) {
+        this.siblings = siblings;
     }
 
     @Override

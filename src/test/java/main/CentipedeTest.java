@@ -12,7 +12,15 @@ public class CentipedeTest {
     @DisplayName("Centipede Leg Test")
     void centipedeTest() {
         assertEquals(100, testCentipede.getLegs());
-        ;
+    }
+
+    @Test
+    @DisplayName("Set and Get")
+    void setAndGet(){
+        testCentipede.setName("Millions");
+        testCentipede.setLegs(96);
+        assertEquals("Millions",testCentipede.getName(),"Names don't match");
+        assertEquals(96,testCentipede.getLegs(),"Number of legs don't match");
     }
 
     @Test
