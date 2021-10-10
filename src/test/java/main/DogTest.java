@@ -20,6 +20,7 @@ public class DogTest {
         assertEquals(4,testingDog.getLegs(),"This is not a dog");
     }
 
+
     @Test
     @DisplayName("Dog is a Mammal Test")
     void mammalTest() {

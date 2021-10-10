@@ -1,16 +1,18 @@
 package main;
 
-public class Snail extends Insects implements Vegan{
+public class Snail extends Insects {
 
     private String name;
     private String breed;
-    private int legs;
+    private int birthYear;
+    public double shellDiameter;
 
 
-    public Snail( String name, String breed, int legs){
+    public Snail( String name, String breed, int birthYear, double shellDiameter){
         this.name = name;
         this.breed = breed;
-        this.legs = legs;
+        this.birthYear = birthYear;
+        this.shellDiameter = shellDiameter;
     }
 
     public String snailSound(){
@@ -33,16 +35,19 @@ public class Snail extends Insects implements Vegan{
         this.breed = breed;
     }
 
-    public int getLegs() {
-        return legs;
+    public int getBirthYear() {
+        return birthYear;
     }
 
-    public void setLegs(int legs) {
-        this.legs = legs;
+    public void setBirthYear(int birthYear) {
+        this.birthYear = birthYear;
     }
 
-    @Override
-    public String eatLettuce() {
-        return "I only eat Lettuce";
+    public double getShellDiameter() {
+        return shellDiameter;
+    }
+
+    public void setShellDiameter(double shellDiameter) {
+        this.shellDiameter = shellDiameter;
     }
 }

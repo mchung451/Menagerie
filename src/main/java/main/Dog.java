@@ -43,10 +43,6 @@ public class Dog extends Mammals{
         return legs;
     }
 
-    public String mammalType(){
-        return "Dog";
-    }
-
     @Override
     public String toString() {
         return "Dog{" +
