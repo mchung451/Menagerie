@@ -5,18 +5,34 @@ public class Bat extends Mammals implements Flying{
     //////////// Attributes ////////////
 
     private String name;
-    private String breed;
-    private int legs;
+    private String species;
+    private int birthYear;
+    private double wingspan;
+    private boolean blind;
 
     /////////// Constructors ///////////
 
-    public Bat(String name, String breed, int legs){
+    public Bat(String name, String species, int birthYear, double wingspan, boolean blind){
         this.name = name;
-        this.breed = breed;
-        this.legs = legs;
+        this.species = species;
+        this.birthYear = birthYear;
+        this.wingspan = wingspan;
+        this.blind = blind;
+    }
+
+    public Bat() {
+        this.name = "Unknown";
+        this.species = "Unknown";
+        this.birthYear = 0;
+        this.wingspan = 0;
+        this.blind = true;
     }
 
     /////////// Methods ////////////
+
+    public String screech(){
+        return "Screech!";
+    }
 
     public String getName() {
         return name;
@@ -26,20 +42,36 @@ public class Bat extends Mammals implements Flying{
         this.name = name;
     }
 
-    public String getBreed() {
-        return breed;
+    public String getSpecies() {
+        return species;
     }
 
-    public void setBreed(String breed) {
-        this.breed = breed;
+    public void setSpecies(String species) {
+        this.species = species;
     }
 
-    public int getLegs() {
-        return legs;
+    public int getBirthYear() {
+        return birthYear;
     }
 
-    public void setLegs(int legs) {
-        this.legs = legs;
+    public void setBirthYear(int birthYear) {
+        this.birthYear = birthYear;
+    }
+
+    public double getWingspan() {
+        return wingspan;
+    }
+
+    public void setWingspan(double wingspan) {
+        this.wingspan = wingspan;
+    }
+
+    public boolean isBlind() {
+        return blind;
+    }
+
+    public void setBlind(boolean blind) {
+        this.blind = blind;
     }
 
     @Override
@@ -62,8 +94,10 @@ public class Bat extends Mammals implements Flying{
     public String toString() {
         return "Bat{" +
                 "name='" + name + '\'' +
-                ", breed='" + breed + '\'' +
-                ", legs=" + legs +
+                ", species='" + species + '\'' +
+                ", birthYear=" + birthYear +
+                ", wingspan=" + wingspan +
+                ", blind=" + blind +
                 '}';
     }
 }

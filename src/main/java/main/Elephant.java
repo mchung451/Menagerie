@@ -67,14 +67,4 @@ public class Elephant extends Mammals{
         this.healthy = healthy;
     }
 
-    @Override
-    public String toString() {
-        return "Elephant{" +
-                "name='" + name + '\'' +
-                ", species='" + species + '\'' +
-                ", height=" + height +
-                ", birthYear=" + birthYear +
-                ", healthy=" + healthy +
-                '}';
-    }
 }

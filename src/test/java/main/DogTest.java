@@ -3,10 +3,11 @@ package main;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
 
 public class DogTest {
 
-    Dog testingDog = new Dog("Scooby","Shitzu",4);
+    Dog testingDog = new Dog("Scooby","Shitzu",2012,true);
 
     @Test
     @DisplayName("Dog Noise Test")
@@ -15,11 +16,23 @@ public class DogTest {
     }
 
     @Test
-    @DisplayName("Dog Leg Test")
-    void legTest(){
-        assertEquals(4,testingDog.getLegs(),"This is not a dog");
+    @DisplayName("Getters and Setters Test")
+    void getAndSet(){
+        testingDog.setName("Scrappy");
+        testingDog.setBreed("Chihuahua");
+        testingDog.setBirthYear(2020);
+        testingDog.setVaccinated(false);
+        assertEquals("Scrappy",testingDog.getName(),"Names do not match");
+        assertEquals("Chihuahua",testingDog.getBreed(),"Breeds do not match");
+        assertEquals(2020,testingDog.getBirthYear(),"Birth Year does not match");
+        assertFalse(testingDog.isVaccinated(),"Vaccination status is not matching");
     }
 
+    @Test
+    @DisplayName("To string method")
+    void toStringTest(){
+        assertEquals("Dog{name='Scooby', breed='Shitzu', birthYear=2012, vaccinated=true}",testingDog.toString(),"To string method doesn't work");
+    }
 
     @Test
     @DisplayName("Dog is a Mammal Test")

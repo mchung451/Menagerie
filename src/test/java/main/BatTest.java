@@ -3,16 +3,37 @@ package main;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
 
 public class BatTest {
 
-    Bat testBat = new Bat("Barry", "Fruit", 2);
-    Bat testBat2 = new Bat("a","b", 2);
+    Bat testBat = new Bat();
 
     @Test
-    @DisplayName("Bat Leg Test")
-    void batTesting() {
-        assertEquals(2, testBat.getLegs(), "This is not a bat");
+    @DisplayName("Bat Noise Test")
+    void screechTest(){
+        assertEquals("Screech!",testBat.screech(),"The noise does not match the sound a bat makes");
+    }
+
+    @Test
+    @DisplayName("Setters and Getters Test")
+    void setAndGet(){
+        testBat.setName("Barry");
+        testBat.setSpecies("Vampire");
+        testBat.setBirthYear(2020);
+        testBat.setWingspan(0.2);
+        testBat.setBlind(false);
+        assertEquals("Barry",testBat.getName(),"The names do not match");
+        assertEquals("Vampire",testBat.getSpecies(),"The species do not match");
+        assertEquals(2020,testBat.getBirthYear(),"The birth year does not match");
+        assertEquals(0.2,testBat.getWingspan(),"The wingspan does not match");
+        assertFalse(testBat.isBlind(),"The blind status is incorrect");
+    }
+
+    @Test
+    @DisplayName("toString test")
+    void toStringTest(){
+        assertEquals("Bat{name='Unknown', species='Unknown', birthYear=0, wingspan=0.0, blind=true}",testBat.toString(),"To string method does not work");
     }
 
     @Test
@@ -37,26 +58,4 @@ public class BatTest {
         assertEquals("I land", testBat.land(), "This thing cannot land");
     }
 
-    @Test
-    @DisplayName("Name Test")
-    void nameTest() {
-        assertEquals("Barry", testBat.getName(), "The names are not the same");
-    }
-
-    @Test
-    @DisplayName("Breed Test")
-    void breedTest() {
-        assertEquals("Fruit", testBat.getBreed(), "The breeds are not the same");
-    }
-
-    @Test
-    @DisplayName("Getters and Setters Test")
-    void gettersAndSetters() {
-        testBat2.setName("Jackson");
-        testBat2.setBreed("Brown");
-        testBat2.setLegs(3);
-        assertEquals(testBat2.getName(),"Jackson","The names are not the same");
-        assertEquals(testBat2.getBreed(),"Brown","The breeds are not the same");
-        assertEquals(testBat2.getLegs(),3,"The legs are not the same");
-    }
 }

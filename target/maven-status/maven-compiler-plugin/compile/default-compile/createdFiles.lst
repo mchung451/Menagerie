@@ -3,7 +3,6 @@ main\Roost.class
 main\Bee.class
 main\Animals.class
 main\Elephant.class
-main\Starfish.class
 main\Main.class
 main\Snail.class
 main\Insects.class
@@ -13,6 +12,5 @@ main\Bat.class
 main\Salmon.class
 main\Fish.class
 main\MainController.class
-main\Vegan.class
 main\Kennel.class
 main\Mammals.class

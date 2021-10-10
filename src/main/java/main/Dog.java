@@ -7,14 +7,16 @@ public class Dog extends Mammals{
 
     private String name;
     private String breed;
-    private int legs;
+    private int birthYear;
+    private boolean vaccinated;
 
     //////////// Constructors ////////////
 
-    public Dog (String name, String breed, int legs){
+    public Dog (String name, String breed, int birthYear, boolean vaccinated){
         this.name = name;
         this.breed = breed;
-        this.legs= legs;
+        this.birthYear = birthYear;
+        this.vaccinated = vaccinated;
     }
 
     //////////// Methods /////////////////
@@ -39,8 +41,20 @@ public class Dog extends Mammals{
         this.breed = breed;
     }
 
-    public int getLegs() {
-        return legs;
+    public int getBirthYear() {
+        return birthYear;
+    }
+
+    public void setBirthYear(int birthYear) {
+        this.birthYear = birthYear;
+    }
+
+    public boolean isVaccinated() {
+        return vaccinated;
+    }
+
+    public void setVaccinated(boolean vaccinated) {
+        this.vaccinated = vaccinated;
     }
 
     @Override
@@ -48,7 +62,8 @@ public class Dog extends Mammals{
         return "Dog{" +
                 "name='" + name + '\'' +
                 ", breed='" + breed + '\'' +
-                ", legs=" + legs +
+                ", birthYear=" + birthYear +
+                ", vaccinated=" + vaccinated +
                 '}';
     }
 }
