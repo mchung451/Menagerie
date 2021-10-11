@@ -2,8 +2,6 @@ package main;
 
 public abstract class Animals {
 
-    /// Constructors ///
-
     /// Methods ///
 
     public abstract String breathe();

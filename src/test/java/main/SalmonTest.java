@@ -22,6 +22,12 @@ class SalmonTest {
     }
 
     @Test
+    @DisplayName("toString test")
+    void toStringTest(){
+        assertEquals("Salmon{salmonName='Alex', salmonBreed='Pink', weight=1.76}",testSalmon.toString(),"To string method does not work");
+    }
+
+    @Test
     @DisplayName("Salmon is an animal Test")
     void animalTest() {
         assertEquals("I die", testSalmon.death(), "This cannot be an animal as it does not die");
