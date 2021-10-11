@@ -11,7 +11,7 @@ Scenario: A dog is a fish
   When Dog is placed in water
   Then Dog is not a fish
 
-Scenario: A starfish is a fish
-  Given Starfish breathes water
-  When Starfish is placed in water
-  Then Starfish is a fish
+Scenario: A bat is a fish
+  Given Bat doesn't breathe water
+  When Bat is placed in water
+  Then Bat is not a fish

@@ -6,13 +6,7 @@ import io.cucumber.java.en.When;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-
-
-
-class runner{
-
-}
-public class cucumberFish {
+public class isItAFishStepDefinitions {
     private String breathe;
     private String actualbreathe;
 
@@ -33,9 +27,9 @@ public class cucumberFish {
         breathe = "air";
     }
 
-    @Given("Starfish breathes water")
-    public void starfishBreatheTest(){
-        breathe = "water";
+    @Given("Bat doesn't breathe water")
+    public void batBreatheTest(){
+        breathe = "air";
     }
 
     @When("Salmon is placed in water")
@@ -48,9 +42,9 @@ public class cucumberFish {
         actualbreathe = isItAFish.isItaFishbreathing("air");
     }
 
-    @When("Starfish is placed in water")
-    public void breatheInWaterStarfish(){
-        actualbreathe = isItAFish.isItaFishbreathing("water");
+    @When("Bat is placed in water")
+    public void breatheInWaterBat(){
+        actualbreathe = isItAFish.isItaFishbreathing("air");
     }
 
     @Then("Salmon is a fish")
@@ -63,8 +57,8 @@ public class cucumberFish {
         assertEquals("air",breathe,"This does not breathe air");
     }
 
-    @Then("Starfish is a fish")
+    @Then("Bat is not a fish")
     public void revealIsBreatheSalmon(){
-        assertEquals("water",breathe,"This does not breathe water");
+        assertEquals("air",breathe,"This does not breathe water");
     }
 }

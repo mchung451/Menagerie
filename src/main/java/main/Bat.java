@@ -1,6 +1,6 @@
 package main;
 
-public class Bat extends Mammals implements Flying{
+public class Bat extends Mammals implements Flying {
 
     //////////// Attributes ////////////
 
@@ -12,12 +12,13 @@ public class Bat extends Mammals implements Flying{
 
     /////////// Constructors ///////////
 
-    public Bat(String name, String species, int birthYear, double wingspan, boolean blind){
+    public Bat(String name, String species, int birthYear, double wingspan, boolean blind) {
         this.name = name;
         this.species = species;
         this.birthYear = birthYear;
         this.wingspan = wingspan;
         this.blind = blind;
+
     }
 
     public Bat() {
@@ -30,8 +31,8 @@ public class Bat extends Mammals implements Flying{
 
     /////////// Methods ////////////
 
-    public String screech(){
-        if(wingspan >= 0){
+    public String screech() {
+        if (wingspan >= 0) {
             wingspan += 0;
         }
         return "Screech!";
@@ -102,4 +103,7 @@ public class Bat extends Mammals implements Flying{
                 ", blind=" + blind +
                 '}';
     }
+
+
+
 }
