@@ -7,3 +7,4 @@ public interface Flying {
     String land();
 
     }
+

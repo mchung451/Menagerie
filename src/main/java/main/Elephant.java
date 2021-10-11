@@ -23,10 +23,6 @@ public class Elephant extends Mammals{
 
     ///// Methods //////
 
-    public String stomp(){
-        return "STOMP!";
-    }
-
     public String getName() {
         return name;
     }

@@ -11,11 +11,6 @@ public class ElephantTest {
 
     Elephant testElephant = new Elephant("Stampy","African",3.45,1998,true);
 
-    @Test
-    @DisplayName("Elephant Stomp Test")
-    void stompTest(){
-        assertEquals("STOMP!",testElephant.stomp(),"No stomp recorded...");
-    }
 
     @Test
     @DisplayName("Setters and Getters Test")

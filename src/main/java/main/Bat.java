@@ -23,14 +23,17 @@ public class Bat extends Mammals implements Flying{
     public Bat() {
         this.name = "Unknown";
         this.species = "Unknown";
-        this.birthYear = 0;
-        this.wingspan = 0;
+        this.birthYear = 2021;
+        this.wingspan = 1;
         this.blind = true;
     }
 
     /////////// Methods ////////////
 
     public String screech(){
+        if(wingspan >= 0){
+            wingspan += 0;
+        }
         return "Screech!";
     }
 
@@ -87,7 +90,6 @@ public class Bat extends Mammals implements Flying{
     @Override
     public String land() {
         return "I land";
-
     }
 
     @Override

@@ -10,12 +10,6 @@ public class SalmonTest {
     Salmon testSalmon = new Salmon("Alex", "Pink", 1.76);
 
     @Test
-    @DisplayName("Salmon arms test")
-    void fleshTest() {
-        assertEquals("I have orange flesh",testSalmon.fleshColour(),"This animal does not have the matching flesh colour for a real salmon");
-    }
-
-    @Test
     @DisplayName("Getting and Setting Test")
     void getAndSet(){
         testSalmon.setSalmonName("Mo");
@@ -37,6 +31,8 @@ public class SalmonTest {
     @DisplayName("Salmon is a fish Test")
     void fishTest() {
         assertEquals("I breathe water", testSalmon.breathe(), "This does not breathe water so cannot be a fish");
-        assertEquals("I live in water", testSalmon.habitat(), "This does not live in water so cannot be a fish");
+        assertEquals("I either lay eggs or have live birth", testSalmon.reproduce(),"This cannot be a fish");
+        assertEquals("I am an invertebrate",testSalmon.skeleton(),"this cannot be a fish");
+
     }
 }

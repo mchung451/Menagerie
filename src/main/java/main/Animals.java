@@ -2,11 +2,12 @@ package main;
 
 public abstract class Animals {
 
-    /////////// Attributes ////////////
+    /// Methods ///
 
-    /////////// Constructors //////////
+    public abstract String breathe();
+    public abstract String reproduce();
+    public abstract String skeleton();
 
-    ////////// Methods ///////////////
     public String death(){
         return "I die";
     }
@@ -14,5 +15,6 @@ public abstract class Animals {
     public String eat(){
         return "I eat something";
     }
-
 }
+
+

@@ -22,6 +22,9 @@ public class Dog extends Mammals{
     //////////// Methods /////////////////
 
     public String woof(){
+        if (birthYear >=0){
+            birthYear += 1;
+        }
         return "woof";
     }
 

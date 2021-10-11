@@ -18,9 +18,6 @@ public class Salmon extends Fish{
 
     //////// Methods ////////////
 
-    public String fleshColour(){
-        return "I have orange flesh";
-    }
 
     public String getSalmonName() {
         return salmonName;

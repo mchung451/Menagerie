@@ -33,7 +33,7 @@ public class BatTest {
     @Test
     @DisplayName("toString test")
     void toStringTest(){
-        assertEquals("Bat{name='Unknown', species='Unknown', birthYear=0, wingspan=0.0, blind=true}",testBat.toString(),"To string method does not work");
+        assertEquals("Bat{name='Unknown', species='Unknown', birthYear=2021, wingspan=1.0, blind=true}",testBat.toString(),"To string method does not work");
     }
 
     @Test
@@ -48,6 +48,7 @@ public class BatTest {
     @DisplayName("Bat is an animal Test")
     void animalTest() {
         assertEquals("I die", testBat.death(), "This cannot be an animal as it does not die");
+        assertEquals("I eat something", testBat.eat(),"This cannot be an animal as it does not eat");
     }
 
     @Test

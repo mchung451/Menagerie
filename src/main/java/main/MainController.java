@@ -9,25 +9,25 @@ import java.util.List;
 class Roost {
 
     /// Attributes ///
-    private List<Bat> roost = new ArrayList<>();
+    private List<Bat> defaultRoost = new ArrayList<>();
 
     /// Constructor ///
     public Roost() {
-        this.roost.add(new Bat("Barry", "Vampire", 2019, 0.21, false));
-        this.roost.add(new Bat("Fred", "Fruit", 2021,0.5,true));
+        this.defaultRoost.add(new Bat("Barry", "Vampire", 2019, 0.21, false));
+        this.defaultRoost.add(new Bat("Fred", "Fruit", 2021,0.5,true));
     }
 
     /// Methods ///
 
     public String addANewBat(String batName, String batBreed, int batBirthYear, double batWingspan, boolean batBlind) {
         Bat newBat = new Bat(batName, batBreed, batBirthYear, batWingspan, batBlind);
-        return String.valueOf(roost.add(newBat));
+        return String.valueOf(defaultRoost.add(newBat));
     }
 
 
 
     public String toString() {
-        String json = new Gson().toJson(roost);
+        String json = new Gson().toJson(defaultRoost);
         return json;
     }
 
@@ -36,26 +36,26 @@ class Roost {
 class Kennel {
 
     /// Attributes ///
-    private List<Dog> kennel = new ArrayList<>();
+    private List<Dog> defaultKennel = new ArrayList<>();
 
     /// Constructor ///
     public Kennel() {
-        this.kennel.add(new Dog("Scooby", "Poodle", 2017,true));
-        this.kennel.add(new Dog("Beethoven", "Bulldog", 2020,false));
-        this.kennel.add(new Dog("Billy", "Golden Retriever", 2009,true));
+        this.defaultKennel.add(new Dog("Scooby", "Poodle", 2017,true));
+        this.defaultKennel.add(new Dog("Beethoven", "Bulldog", 2020,false));
+        this.defaultKennel.add(new Dog("Billy", "Golden Retriever", 2009,true));
     }
 
     /// Methods ///
 
     public String addANewDog(String dogName, String dogBreed, int dogBirthYear, boolean dogVaccinated) {
         Dog newDog = new Dog(dogName, dogBreed, dogBirthYear, dogVaccinated);
-        return String.valueOf(kennel.add(newDog));
+        return String.valueOf(defaultKennel.add(newDog));
     }
 
 
 
     public String toString() {
-        String json = new Gson().toJson(kennel);
+        String json = new Gson().toJson(defaultKennel);
         return json;
     }
 }

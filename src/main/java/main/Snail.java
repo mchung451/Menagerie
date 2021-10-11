@@ -4,7 +4,7 @@ public class Snail extends Insects {
 
     private String name;
     private String breed;
-    public double shellDiameter;
+    private double shellDiameter;
 
 
     public Snail( String name, String breed, double shellDiameter){
@@ -13,9 +13,13 @@ public class Snail extends Insects {
         this.shellDiameter = shellDiameter;
     }
 
-    public String snailSound(){
-        return "Slither";
-    }
+    public String snailSound() {
+        if (shellDiameter >= 0) {
+            shellDiameter += 0;
+        }
+            return "Slither";
+        }
+
 
     public String getName() {
         return name;

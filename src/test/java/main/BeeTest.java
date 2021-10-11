@@ -34,6 +34,9 @@ public class BeeTest {
     @DisplayName("Bee is a insect test")
     void testingInsect() {
         assertEquals("I am a invertebrate", testBee.skeleton(), "This cannot be an insect as it is not an invertebrate");
+        assertEquals("I lay an egg",testBee.reproduce(),"This cannot be an insect as it is an egg");
+        assertEquals("I breathe air",testBee.breathe(),"This cannot be an insect as it does not breathe air");
+
     }
 
 
