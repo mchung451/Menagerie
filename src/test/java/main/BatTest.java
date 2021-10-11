@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
 
 class BatTest {
 
-    Bat testBat = new Bat();
+    Bat testBat = new Bat("Robin","Fruit",2010,0.3,false);
 
     @Test
     @DisplayName("Bat Noise Test")

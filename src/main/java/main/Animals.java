@@ -2,9 +2,6 @@ package main;
 
 public abstract class Animals {
 
-    /// Attributes ///
-    private boolean fictional;
-
     /// Constructors ///
 
     /// Methods ///
