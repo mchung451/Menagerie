@@ -27,8 +27,7 @@ class Roost {
 
 
     public String toString() {
-        String json = new Gson().toJson(defaultRoost);
-        return json;
+        return new Gson().toJson(defaultRoost);
     }
 
 }
@@ -55,8 +54,7 @@ class Kennel {
 
 
     public String toString() {
-        String json = new Gson().toJson(defaultKennel);
-        return json;
+        return new Gson().toJson(defaultKennel);
     }
 }
 
