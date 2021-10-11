@@ -4,14 +4,8 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class BeeTest {
+class BeeTest {
     Bee testBee = new Bee("Bumble", "Queen", 6);
-
-    @Test
-    @DisplayName("Bee Sound Test")
-    void testingBeeSound() {
-        assertEquals("Buzz", testBee.buzz(), "This is not a bee");
-    }
 
     @Test
     @DisplayName("Bee Leg Test")

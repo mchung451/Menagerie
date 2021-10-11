@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 
 
-public class ElephantTest {
+class ElephantTest {
 
     Elephant testElephant = new Elephant("Stampy","African",3.45,1998,true);
 

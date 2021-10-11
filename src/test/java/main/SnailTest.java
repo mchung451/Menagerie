@@ -4,7 +4,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class SnailTest {
+class SnailTest {
 
     Snail testSnail = new Snail("Gary","Giant African",0.24);
 

@@ -16,10 +16,6 @@ public class Bee extends Insects implements Flying{
 
     ////// Methods ///////
 
-    public String buzz(){
-        return "Buzz";
-    }
-
     public String getName() {
         return name;
     }

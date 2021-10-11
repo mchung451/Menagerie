@@ -4,7 +4,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class CentipedeTest {
+class CentipedeTest {
 
     Centipede testCentipede = new Centipede("Mildred", 100);
 
