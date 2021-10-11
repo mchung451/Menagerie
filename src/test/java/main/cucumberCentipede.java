@@ -6,13 +6,13 @@ import io.cucumber.java.en.When;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class isItACentipedeTest {
+class isItACentipedeMain {
     static String isItACentipede (int legs) {
         return "Centipede".equals(legs) ? "Yes":"No";
     }
 }
 
-public class cucumberCentipedeTest{
+public class cucumberCentipede{
     private int legs;
     private String actualLegs;
 
@@ -33,7 +33,7 @@ public class cucumberCentipedeTest{
 
     @When("I ask how many legs it has")
     public void actualLegs(){
-        actualLegs = isItACentipedeTest.isItACentipede(legs);
+        actualLegs = isItACentipedeMain.isItACentipede(legs);
     }
 
     @Then("I should be told Yes")
