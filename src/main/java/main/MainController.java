@@ -51,8 +51,6 @@ class Kennel {
         return String.valueOf(defaultKennel.add(newDog));
     }
 
-
-
     public String toString() {
         return new Gson().toJson(defaultKennel);
     }
