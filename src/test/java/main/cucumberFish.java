@@ -12,7 +12,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class runner{
 
 }
-public class cucumberFishTest {
+public class cucumberFish {
     private String breathe;
     private String actualbreathe;
 

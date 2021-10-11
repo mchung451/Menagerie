@@ -7,14 +7,20 @@ import io.cucumber.java.en.When;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class isItACentipedeMain {
-    static String isItACentipede (int legs) {
-        return "Centipede".equals(legs) ? "Yes":"No";
+    static boolean isItACentipede (int legs) {
+        return "Centipede".equals(legs);
     }
 }
 
 public class cucumberCentipede{
     private int legs;
-    private String actualLegs;
+    private int actualLegs;
+    private boolean match;
+
+    public cucumberCentipede (int actualLegs, boolean match){
+        this.actualLegs = 100;
+        this.match = true;
+    }
 
     @Given("It has 100 legs")
     public void legsTest1(){
@@ -33,21 +39,21 @@ public class cucumberCentipede{
 
     @When("I ask how many legs it has")
     public void actualLegs(){
-        actualLegs = isItACentipedeMain.isItACentipede(legs);
+        match = isItACentipedeMain.isItACentipede(legs);
     }
 
     @Then("I should be told Yes")
     public void revealYes(){
-        assertEquals(100,legs);
+        assertEquals(actualLegs,legs);
     }
 
     @Then("I should be told a dog is not a centipede")
     public void revealNoDog(){
-        assertEquals(4,legs);
+        assertEquals(actualLegs,legs);
     }
 
     @Then("I should be told a salmon is not a centipede")
     public void revealNoSalmon(){
-        assertEquals(0,legs);
+        assertEquals(actualLegs,legs);
     }
 }
