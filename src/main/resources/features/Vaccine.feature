@@ -1,4 +1,4 @@
-Feature: Does a dog needs a vaccine
+Feature: Does a dog need a vaccine
   As a zookeeper, I want to know if a dog needs a vaccine dependant on birth year
 
   Scenario: A dog named Barney is not vaccinated

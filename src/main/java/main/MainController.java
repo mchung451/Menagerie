@@ -24,8 +24,6 @@ class Roost {
         return String.valueOf(defaultRoost.add(newBat));
     }
 
-
-
     public String toString() {
         return new Gson().toJson(defaultRoost);
     }
