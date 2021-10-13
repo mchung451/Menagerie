@@ -22,6 +22,28 @@ public class Selenium {
         else{
             System.out.println("Welcome Message Link Failed...");
         }
-        driver.close();
+
+        driver.navigate().back();
+
+        driver.findElement(By.xpath("//button[contains(text(), 'Search Dogs')]")).click();
+        if (driver.getCurrentUrl().equals("http://34.244.190.165:8080/Kennel?")){
+            System.out.println("Search dogs works");
+        }
+        else{
+            System.out.println("Search dogs does not work");
+        }
+
+        driver.navigate().back();
+
+        driver.findElement(By.xpath("//button[contains(text(), 'Search Bat')]")).click();
+        if (driver.getCurrentUrl().equals("http://34.244.190.165:8080/Roost?")){
+            System.out.println("Search bats works");
+        }
+        else {
+            System.out.println("Search bats doesn't work");
+        }
+
+        driver.quit();
+
     }
 }
