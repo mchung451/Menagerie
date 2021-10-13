@@ -22,7 +22,6 @@ public class Selenium {
         else{
             System.out.println("Welcome Message Link Failed...");
         }
-        Thread.sleep(5000);
         driver.close();
     }
 }
