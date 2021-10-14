@@ -10,13 +10,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.util.concurrent.TimeUnit;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-
-public class CalcTest {
+class CalcTest {
 
     @Test
-    //Tests google calculator
+    //Tests google search calculator
     public void googleCalculator(){
-
 
 
         //Creating a driver object referencing WebDriver
@@ -48,7 +46,10 @@ public class CalcTest {
         String result = calculatorTextBox.getText();
 
         //Verify that result of 2+2 is 4
-        assertEquals(result, "4");
+        assertEquals("4",result, "Unexpected result");
+
+        // Quitting
+        driver.quit();
     }
 
 }
