@@ -1,3 +1,4 @@
+/*
 package main;
 
 import io.cucumber.junit.Cucumber;
@@ -8,3 +9,4 @@ import org.junit.runner.RunWith;
 @CucumberOptions(features = "src/main/resources/features", glue = "main")
 public class runnerTest {
 }
+*/
