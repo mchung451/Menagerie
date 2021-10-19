@@ -1,12 +1,13 @@
-/*
 package main;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 import java.util.concurrent.TimeUnit;
 
@@ -19,14 +20,22 @@ class CalcTest {
     public void googleCalculator(){
 
 
-        //Creating a driver object referencing WebDriver
+/*        //Creating a driver object referencing WebDriver
         WebDriver driver;
 
         //Setting the webdriver.chrome.driver property to its executable's location
         System.setProperty("webdriver.chrome.driver","C:\\Users\\micha\\Desktop\\new chromedriver\\chromedriver.exe");
 
         //Instantiating driver
-        driver = new ChromeDriver();
+        driver = new ChromeDriver();*/
+
+        //New Method
+
+        WebDriverManager.chromedriver().setup(); // Line 2
+
+        ChromeOptions options = new ChromeOptions();
+
+        WebDriver driver=new ChromeDriver(options);
 
         //Set implicit wait of 10 seconds
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -54,4 +63,3 @@ class CalcTest {
     }
 }
 
-*/
