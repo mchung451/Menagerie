@@ -10,6 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.util.concurrent.TimeUnit;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+
 class CalcTest {
 
     @Test
@@ -40,7 +41,6 @@ class CalcTest {
         driver.findElement(By.xpath("//input [@name=\"q\"]")).sendKeys("2+2");
         driver.findElement(By.xpath("//input [@name=\"q\"]")).sendKeys(Keys.ENTER);
 
-
         //Get result from calculator
         WebElement calculatorTextBox = driver.findElement(By.id("cwos"));
         String result = calculatorTextBox.getText();
@@ -51,6 +51,5 @@ class CalcTest {
         // Quitting
         driver.quit();
     }
-
 }
 

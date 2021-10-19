@@ -1,6 +1,7 @@
 package main;
 
 import com.google.gson.Gson;
+import org.springframework.data.annotation.Id;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
@@ -60,28 +61,33 @@ public class MainController {
     Roost newRoost = new Roost();
     Kennel newKennel = new Kennel();
 
+    @CrossOrigin("http://localhost:3000/")
     @GetMapping("/Roost")
     public String myRoost() {
         return newRoost.toString();
     }
 
+    @CrossOrigin("http://localhost:3000/")
     @GetMapping("/Kennel")
     public String myKennel() {
         return newKennel.toString();
     }
 
+    @CrossOrigin("http://localhost:3000/")
     @GetMapping("/WelcomeMessage")
     public String welcome(){
         return "Please do not use flash when photographing the animals";
     }
 
 
+    @CrossOrigin("http://localhost:3000/")
     @PostMapping("/addDog")
     public String addANewDog(@RequestParam String dogName, String dogBreed, int dogBirthYear, boolean dogVaccinated){
         newKennel.addANewDog(dogName,dogBreed,dogBirthYear,dogVaccinated);
         return "Dog successfully added!";
     }
 
+    @CrossOrigin("http://localhost:3000/")
     @PostMapping("/addRoost" )
     public String addingNewBat(@RequestParam String batName,String batBreed, int batBirthYear, double batWingspan, boolean batBlind){
         newRoost.addANewBat(batName,batBreed, batBirthYear, batWingspan, batBlind);
