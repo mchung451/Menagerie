@@ -1,3 +1,4 @@
+/*
 package main;
 
 import io.cucumber.java.en.Given;
@@ -53,14 +54,12 @@ public class AshStepDefinitions {
     @When("I view my wishlist table")
     public void viewWishListTable() {
 
-
-
     }
 
     @Then("I find four selected items in my Wishlist")
     public void verifyFourItemsInWishlist() {
 
-
     }
 
 }
+*/
