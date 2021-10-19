@@ -26,10 +26,6 @@
         <sonar.jacoco.reportPath>${project.basedir}/../target/jacoco.exec</sonar.jacoco.reportPath>
         <sonar.language>java</sonar.language>
         <java.version>11</java.version>
-        <frontend-src-dir>${project.basedir}/src/main/newapp</frontend-src-dir>
-        <node.version>v16.11.1</node.version>
-        <yarn.version>v1.16.0</yarn.version>
-        <frontend-maven-plugin.version>1.7.6</frontend-maven-plugin.version>
     </properties>
 
 
