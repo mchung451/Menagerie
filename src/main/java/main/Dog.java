@@ -2,7 +2,6 @@ package main;
 
 public class Dog extends Mammals{
 
-    //TEST!//
 
     //////////// Attributes ////////////
 
