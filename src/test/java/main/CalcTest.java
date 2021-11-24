@@ -1,3 +1,4 @@
+/*
 package main;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -20,6 +21,7 @@ class CalcTest {
     public void googleCalculator(){
 
 
+*/
 /*        //Creating a driver object referencing WebDriver
         WebDriver driver;
 
@@ -27,7 +29,10 @@ class CalcTest {
         System.setProperty("webdriver.chrome.driver","C:\\Users\\micha\\Desktop\\new chromedriver\\chromedriver.exe");
 
         //Instantiating driver
-        driver = new ChromeDriver();*/
+        driver = new ChromeDriver();
+        *//*
+
+
 
         //New Method
 
@@ -62,4 +67,5 @@ class CalcTest {
         driver.quit();
     }
 }
+*/
 
