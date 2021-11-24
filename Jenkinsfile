@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-                dir("/var/lib/jenkins/workspace/pipeline/zookeeper") {
+                dir("/var/lib/jenkins/workspace/actualpipeline/zookeeper") {
                 sh 'mvn -B -DskipTests clean package'
                 }
             }
