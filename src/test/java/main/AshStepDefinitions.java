@@ -1,14 +1,15 @@
-/*
 package main;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 import java.util.concurrent.TimeUnit;
 
@@ -21,8 +22,14 @@ public class AshStepDefinitions {
     @Given("I add four different products to my wish list")
     public void addingFourItemsToWishlist(){
 
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\micha\\Desktop\\new chromedriver\\chromedriver.exe");
-        driver = new ChromeDriver();
+        WebDriverManager.chromedriver().setup(); // Line 2
+
+        ChromeOptions options = new ChromeOptions();
+
+        options.setHeadless(true);
+
+        WebDriver driver=new ChromeDriver(options);
+
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 
         // Launching the website
@@ -62,4 +69,4 @@ public class AshStepDefinitions {
     }
 
 }
-*/
+
