@@ -1,10 +1,10 @@
 main\BeeTest.class
-main\BatTest.class
 main\runnerTest.class
-main\SalmonTest.class
 main\SpringTest.class
-main\SnailTest.class
-main\vaccineStepDefinitions.class
 main\CentipedeTest.class
 main\DogTest.class
 main\ElephantTest.class
+main\BatTest.class
+main\SalmonTest.class
+main\SnailTest.class
+main\vaccineStepDefinitions.class

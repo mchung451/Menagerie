@@ -53,6 +53,10 @@ class Kennel {
     public String toString() {
         return new Gson().toJson(defaultKennel);
     }
+
+    public void deleteByName(int birthYear){
+        defaultKennel.removeIf(dog -> (dog.getBirthYear() == birthYear));
+    }
 }
 
 @RestController
@@ -92,5 +96,11 @@ public class MainController {
     public String addingNewBat(@RequestParam String batName,String batBreed, int batBirthYear, double batWingspan, boolean batBlind){
         newRoost.addANewBat(batName,batBreed, batBirthYear, batWingspan, batBlind);
         return "Bat successfully added!";
+    }
+
+    @DeleteMapping("/deleteDog")
+    public String deleteDog(@RequestParam int dogBirthYear){
+        newKennel.deleteByName(dogBirthYear);
+        return "Succesfully Deleted!";
     }
 }
