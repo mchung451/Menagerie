@@ -5,26 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0f621a9a-c17e-496b-b33d-bda8f5e160b4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/Dog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Dog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/Kennel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/Kennel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/MainController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jacoco.exec" beforeDir="false" afterPath="$PROJECT_DIR$/target/jacoco.exec" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-main.BatTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-main.BatTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-main.BeeTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-main.BeeTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-main.CentipedeTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-main.CentipedeTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-main.DogTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-main.DogTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-main.SalmonTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-main.SalmonTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-main.SnailTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-main.SnailTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-main.runnerTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-main.runnerTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/main.BatTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/main.BatTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/main.BeeTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/main.BeeTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/main.CentipedeTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/main.CentipedeTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/main.DogTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/main.DogTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/main.SalmonTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/main.SalmonTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/main.SnailTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/main.SnailTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/main.runnerTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/main.runnerTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
