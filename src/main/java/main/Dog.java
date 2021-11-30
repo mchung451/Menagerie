@@ -1,5 +1,7 @@
 package main;
 
+import java.util.Optional;
+
 public class Dog extends Mammals{
 
 
@@ -99,7 +101,4 @@ public class Dog extends Mammals{
         }
         return message;
     }
-
-
-
 }

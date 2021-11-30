@@ -1,11 +1,12 @@
 package main;
 
 import com.google.gson.Gson;
-import org.springframework.data.annotation.Id;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
+import java.util.stream.Collectors;
 
 class Roost {
 
@@ -50,12 +51,16 @@ class Kennel {
         return String.valueOf(defaultKennel.add(newDog));
     }
 
+    public List<Dog> selectDogByName (String name){
+        return defaultKennel.stream().filter(Dog -> Dog.getName().toLowerCase().equals(name.toLowerCase())).collect(Collectors.toList());
+    }
+
     public String toString() {
         return new Gson().toJson(defaultKennel);
     }
 
-    public void deleteByName(int birthYear){
-        defaultKennel.removeIf(dog -> (dog.getBirthYear() == birthYear));
+    public void deleteByName(String name){
+        defaultKennel.removeIf(Dog -> (Dog.getName().equals(name)));
     }
 }
 
@@ -98,9 +103,25 @@ public class MainController {
         return "Bat successfully added!";
     }
 
-    @DeleteMapping("/deleteDog")
-    public String deleteDog(@RequestParam int dogBirthYear){
-        newKennel.deleteByName(dogBirthYear);
-        return "Succesfully Deleted!";
+    @GetMapping("/dogSearch")
+    public String getDogByName (@RequestParam String name){
+        return newKennel.selectDogByName(name).toString();
+    }
+
+    @DeleteMapping("/Kennel")
+    public String deleteDogByName (@RequestParam String name) {
+        newKennel.deleteByName(name);
+        return newKennel.toString();
+    }
+
+    @PutMapping("/updatingDog")
+    public String updatingADog (@RequestParam String name, String newName, String newBreed, int newBirthYear, boolean vaccine){
+            List<Dog> testDog = newKennel.selectDogByName(name);
+            Dog foundDog = testDog.get(0);
+            foundDog.setName(newName);
+            foundDog.setBreed(newBreed);
+            foundDog.setBirthYear(newBirthYear);
+            foundDog.setVaccinated(vaccine);
+        return testDog.toString();
     }
 }
