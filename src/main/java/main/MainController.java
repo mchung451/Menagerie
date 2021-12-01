@@ -1,11 +1,12 @@
 package main;
 
 import com.google.gson.Gson;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Locale;
 import java.util.stream.Collectors;
 
 class Roost {
@@ -30,6 +31,10 @@ class Roost {
         return new Gson().toJson(defaultRoost);
     }
 
+    public List<Bat> getListOfBat() {
+        return defaultRoost;
+    }
+
 }
 
 class Kennel {
@@ -51,6 +56,10 @@ class Kennel {
         return String.valueOf(defaultKennel.add(newDog));
     }
 
+    public List<Dog> getListOfDog() {
+        return defaultKennel;
+    }
+
     public List<Dog> selectDogByName (String name){
         return defaultKennel.stream().filter(Dog -> Dog.getName().toLowerCase().equals(name.toLowerCase())).collect(Collectors.toList());
     }
@@ -62,6 +71,7 @@ class Kennel {
     public void deleteByName(String name){
         defaultKennel.removeIf(Dog -> (Dog.getName().equals(name)));
     }
+
 }
 
 @RestController
@@ -88,33 +98,49 @@ public class MainController {
         return "Please do not use flash when photographing the animals";
     }
 
-
-    @CrossOrigin("http://localhost:3000/")
-    @PostMapping("/addDog")
-    public String addANewDog(@RequestParam String dogName, String dogBreed, int dogBirthYear, boolean dogVaccinated){
-        newKennel.addANewDog(dogName,dogBreed,dogBirthYear,dogVaccinated);
+    @PostMapping("/Kennel/addDogTest")
+    public String addANewDog(@RequestParam String dogName1, String dogBreed1, int dogBirthYear1, boolean dogVaccinated1){
+        newKennel.addANewDog(dogName1,dogBreed1,dogBirthYear1,dogVaccinated1);
         return "Dog successfully added!";
     }
 
-    @CrossOrigin("http://localhost:3000/")
-    @PostMapping("/addRoost" )
-    public String addingNewBat(@RequestParam String batName,String batBreed, int batBirthYear, double batWingspan, boolean batBlind){
-        newRoost.addANewBat(batName,batBreed, batBirthYear, batWingspan, batBlind);
+    @PostMapping("Roost/addRoost")
+    public String addingNewBat(@RequestParam String batName1,String batBreed1, int batBirthYear1, double batWingspan1, boolean batBlind1){
+        newRoost.addANewBat(batName1,batBreed1, batBirthYear1, batWingspan1, batBlind1);
         return "Bat successfully added!";
     }
 
-    @GetMapping("/dogSearch")
+    @CrossOrigin("http://localhost:3000")
+    @PostMapping("Kennel/addDog")
+    public ResponseEntity<Dog> addDog (@RequestBody Dog newDog){
+        List<Dog> modKennel = newKennel.getListOfDog();
+        Dog testDog = new Dog(newDog.getName(),newDog.getBreed(),newDog.getBirthYear(),newDog.isVaccinated());
+        modKennel.add(newDog);
+        return new ResponseEntity<Dog>(testDog, HttpStatus.OK);
+    }
+
+    @CrossOrigin("http://localhost:3000")
+    @PostMapping("Roost/addBat")
+    public ResponseEntity<Bat> addBat (@RequestBody Bat newBat){
+        List<Bat> modRoost = newRoost.getListOfBat();
+        Bat testBat = new Bat(newBat.getName(), newBat.getSpecies(), newBat.getBirthYear(), newBat.getWingspan(), newBat.isBlind());
+        modRoost.add(newBat);
+        return new ResponseEntity<Bat>(testBat, HttpStatus.OK);
+    }
+
+
+    @GetMapping("/Kennel/dogSearch")
     public String getDogByName (@RequestParam String name){
         return newKennel.selectDogByName(name).toString();
     }
 
-    @DeleteMapping("/Kennel")
+    @DeleteMapping("/Kennel/deleteDog")
     public String deleteDogByName (@RequestParam String name) {
         newKennel.deleteByName(name);
         return newKennel.toString();
     }
 
-    @PutMapping("/updatingDog")
+    @PutMapping("/Kennel/CRUD")
     public String updatingADog (@RequestParam String name, String newName, String newBreed, int newBirthYear, boolean vaccine){
             List<Dog> testDog = newKennel.selectDogByName(name);
             Dog foundDog = testDog.get(0);

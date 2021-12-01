@@ -21,40 +21,40 @@
 </form>
 
 <h2> Adding a dog to the zoo </h2>
-<form action = "/addDog" method ="POST">
+<form action = "/Kennel/addDogTest" method ="POST">
     <div id="addingANewDog">
         <label for="addingDogName"> Name:</label>
-        <input name = "dogName" id="addingDogName">
+        <input name = "dogName1" id="addingDogName">
         <label for="addingDogBreed"> Breed: </label>
-        <input name ="dogBreed" id="addingDogBreed">
+        <input name ="dogBreed1" id="addingDogBreed">
         <label for="addingBirthYear">Birth Year:</label>
-        <input name="dogBirthYear" id ="addingBirthYear">
+        <input name="dogBirthYear1" id ="addingBirthYear">
         <label for="addingVaccinated">Vaccinated(true/false): </label>
-        <input name="dogVaccinated" id="addingVaccinated">
+        <input name="dogVaccinated1" id="addingVaccinated">
 
         <button>Add new Dog</button>
     </div>
 </form>
 <h2> Adding a bat to the zoo </h2>
-<form action = "/addRoost" method ="POST">
+<form action = "Roost/addRoost" method ="POST">
     <div id="addingANewBat">
         <label for="addingDogName"> Name:</label>
-        <input name = "batName" id="addingBatName">
+        <input name = "batName1" id="addingBatName">
         <label for="addingDogBreed"> Breed: </label>
-        <input name ="batBreed" id="addingBatBreed">
-        <label for="addingBatLegs">Birth Year:</label>
-        <input name="batLegs" id ="addingBatLegs">
+        <input name ="batBreed1" id="addingBatBreed">
+        <label for="addingBatBirthYear">Birth Year:</label>
+        <input name="batBirthYear1" id ="addingBatBirthYear">
         <label for="addingBatWingspan">Wingspan(m):</label>
-        <input name="batWingspan" id ="addingBatWingspan">
+        <input name="batWingspan1" id ="addingBatWingspan">
         <label for="addingBatBlind">Blind(true/false):</label>
-        <input name="batBlind" id ="addingBatBlind">
+        <input name="batBlind1" id ="addingBatBlind">
         <button>Add new Bat</button>
     </div>
 </form>
 
 <h2> Search Dog From the Zoo </h2>
 <h1><a href = "dogSearch"></a></h1>
-<form action = "/dogSearch" method="GET" id="dogSearch">
+<form action = "/Kennel/dogSearch" method="GET" id="dogSearch">
     <div>
         <label for="name">Dog Name Search: </label>
         <input name="name" id="name">
