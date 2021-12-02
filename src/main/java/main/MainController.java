@@ -134,6 +134,7 @@ public class MainController {
         return newKennel.selectDogByName(name).toString();
     }
 
+    @CrossOrigin("http://localhost:3000")
     @DeleteMapping("/Kennel/deleteDog")
     public String deleteDogByName (@RequestParam String name) {
         newKennel.deleteByName(name);
